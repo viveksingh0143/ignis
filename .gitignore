@@ -19,6 +19,9 @@ erl_crash.dump
 # Also ignore archive artifacts (built via "mix archive.build").
 *.ez
 
+# Also ignore bean files
+*.beam
+
 # Temporary files, for example, from tests.
 /tmp/
 
@@ -35,3 +38,9 @@ ignis-*.tar
 npm-debug.log
 /assets/node_modules/
 
+
+# Ignore secret configuration files
+/config/*.secret.exs
+
+# Ignore Elixir language server artifacts
+.elixir_ls/
